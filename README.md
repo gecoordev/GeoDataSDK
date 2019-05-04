@@ -34,6 +34,13 @@ GeoDataSdk.finish(Context context)
 
 The service will restart automatically after device reboot or application re-installation.
 
+You can enable or disable service starting with method:
+```java
+GeoDataSdk.setStatisticsEnabled(Context context, boolean enabled)
+```
+
+The service will start or stop immediately after setting's change. The service will not start until method is not invoked with `enabled` parameter as `true`.
+
 ## GeoDataSample app
 
 GeoDataSample app shows basic usage of GeoDataSDK. It requests required permission and initializing SDK.
