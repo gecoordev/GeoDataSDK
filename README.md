@@ -19,11 +19,9 @@ GeoDataSdk.setUploadInterval(Context context, long millis);
 SDK initializes with method:
 
 ```java
-GeoDataSdk.initialize(Context context, String host, String userHash, String apiKey)
+GeoDataSdk.initialize(Context context, String apiKey)
 ```
 * `context` - application context;
-* `host` - server URL (in format: `http[s]://host[:port]`);
-* `userHash` - user security key;
 * `apiKey` - application security key.
 
 To stop service use method:

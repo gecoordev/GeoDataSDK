@@ -1,5 +1,17 @@
 # Back log of changes in GeoDataSDK library
 
+## Version 1.0.1
+
+* `GeoDataSdk.initialize` method's parameters changed from:
+```java
+GeoDataSdk.initialize(Context context, String host, String userHash, String apiKey)
+```
+to:
+```java
+GeoDataSdk.initialize(Context context, String apiKey)
+```
+* `apiKey` parameter in `GeoDataSdk.initialize` must not be `null`
+
 ## Version 1.0.0
 
 * Fixed bug with showing service notification
