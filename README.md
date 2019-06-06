@@ -4,40 +4,7 @@
 
 GeoDataSDK provides service, that periodically collects GPS coordinates and uploads them to remote server. It requires `Manifest.permission.ACCESS_COARSE_LOCATION` and `Manifest.permission.ACCESS_FINE_LOCATION` permissions to work in your application.
 
-The service takes GPS coordinates from `LocationManager.GPS_PROVIDER` and `LocationManager.NETWORK_PROVIDER` and stores them in cache. By default, service starts every minute and uploads batched coordinates every hour. You can specify these intervals with following methods:
-
-```java
-GeoDataSdk.setServiceInterval(Context context, long millis);
-```
-
-```java
-GeoDataSdk.setUploadInterval(Context context, long millis);
-```
-* `context` - application context;
-* `millis` - interval time in milliseconds.
-
-SDK initializes with method:
-
-```java
-GeoDataSdk.initialize(Context context, String apiKey)
-```
-* `context` - application context;
-* `apiKey` - application security key.
-
-To stop service use method:
-```java
-GeoDataSdk.finish(Context context)
-```
-* `context` - application context.
-
-The service will restart automatically after device reboot or application re-installation.
-
-You can enable or disable service starting with method:
-```java
-GeoDataSdk.setStatisticsEnabled(Context context, boolean enabled)
-```
-
-The service will start or stop immediately after setting's change. The service will not start until method is not invoked with `enabled` parameter as `true`.
+The service takes GPS coordinates from `LocationManager.GPS_PROVIDER` and `LocationManager.NETWORK_PROVIDER` and stores them in cache. By default, service starts every minute and uploads batched coordinates every hour. Documentation for GeoDataSDK public interface can be found [here](https://github.com/gecoordev/GeoDataSDK/wiki).
 
 ## GeoDataSample app
 
