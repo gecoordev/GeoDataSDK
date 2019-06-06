@@ -1,5 +1,12 @@
 # Back log of changes in GeoDataSDK library
 
+## Version 1.0.2
+
+* Added method:
+```java
+GeoDataSdk.setDebugEnabled(Context context, boolean enabled)
+```
+
 ## Version 1.0.1
 
 * `GeoDataSdk.initialize` method's parameters changed from:
