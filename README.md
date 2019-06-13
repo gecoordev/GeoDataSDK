@@ -30,4 +30,4 @@ dependencies {
 }
 ```
 4. Request `Manifest.permission.ACCESS_COARSE_LOCATION` and `Manifest.permission.ACCESS_FINE_LOCATION` permissions;
-5. Initialize SDK with `GeoDataSdk.initialize(Context context, String host, String userHash, String apiKey)` method.
+5. Initialize SDK with `GeoDataSdk.initialize(Context context, String apiKey)` method.
